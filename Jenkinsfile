@@ -4,9 +4,15 @@ pipeline {
 
     stages {
 
-        stage('Hello DevOps') {
+        stage('GitHub Connected') {
             steps {
-                echo 'Jenkins Pipeline is Working Successfully'
+                echo 'GitHub Connection Successful'
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t santosh-devops:v2 .'
             }
         }
 
