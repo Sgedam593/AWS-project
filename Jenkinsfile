@@ -6,7 +6,7 @@ pipeline {
 
         stage('GitHub Connected') {
             steps {
-                echo 'GitHub Connection Successful'
+                echo 'GitHub Connected Successfully'
             }
         }
 
